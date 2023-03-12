@@ -1,0 +1,23 @@
+{
+   "creationTimeStamp": "2023-03-12T15:28:25.778Z",
+   "createdBy": "edmdev",
+   "modifiedTimeStamp": "2023-03-12T15:28:26.270Z",
+   "modifiedBy": "edmdev",
+   "id": "7f5c0898-cd5a-4545-9560-797d0cb7baf3",
+   "name": "QS_Tree1",
+   "description": "Decision Tree",
+   "scoreCodeType": "dataStep",
+   "algorithm": "tree",
+   "function": "classification",
+   "modeler": "sasdemo",
+   "trainTable": "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Public/tables/HMEQ_TRAIN",
+   "eventProbVar": "EM_EVENTPROBABILITY",
+   "targetVariable": "BAD",
+   "targetEvent": "1",
+   "targetLevel": "binary",
+   "tool": "Model Studio",
+   "toolVersion": "8.3",
+   "externalModelId": "0895f86a-dff5-4b5e-ab40-f7a53f476979",
+   "modelVersionName": "1.0",
+   "custom properties": []
+}

@@ -1,5 +1,15 @@
 [
    {
+      "name": "EM_CLASSIFICATION",
+      "description": "",
+      "role": "output",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 12
+   },
+   {
       "name": "I_BAD",
       "description": "",
       "role": "output",
@@ -68,15 +78,5 @@
       "format": "",
       "aggregation": "",
       "length": 8
-   },
-   {
-      "name": "EM_CLASSIFICATION",
-      "description": "",
-      "role": "output",
-      "type": "string",
-      "level": "",
-      "format": "",
-      "aggregation": "",
-      "length": 12
    }
 ]

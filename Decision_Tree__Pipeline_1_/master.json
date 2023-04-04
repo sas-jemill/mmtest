@@ -9,7 +9,7 @@
   "targetEvent" : "           1",
   "sourceUri" : {
     "name" : "Decision Tree",
-    "uri" : "/analyticsComponents/components/f2d5e3d3-55b9-4648-b36a-5e333dbd54ce",
+    "uri" : "/analyticsComponents/components/0db50013-abf6-4b67-b544-39ac90ecfc42",
     "uriType" : "reference",
     "mediaType" : "application/vnd.sas.analytics.component"
   },
@@ -20,10 +20,10 @@
     "uri" : "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Public/tables/HMEQ_TRAIN",
     "uriType" : "reference"
   },
-  "externalModelId" : "f2d5e3d3-55b9-4648-b36a-5e333dbd54ce",
+  "externalModelId" : "0db50013-abf6-4b67-b544-39ac90ecfc42",
   "fitStatUri" : {
     "name" : "dmcas_fitstat",
-    "uri" : "/files/files/61573e66-80a0-4beb-a81a-c3ef32b962a8",
+    "uri" : "/files/files/c8fdd26a-567a-4d34-9216-27f2aa291c5a",
     "uriType" : "child",
     "mediaType" : "application/vnd.sas.analytics.report+json"
   },
@@ -180,8 +180,8 @@
       "sequence" : 1,
       "type" : "astore",
       "stepUri" : {
-        "name" : "_EDJVN1SV56BHDMZQWK4274RTA_ast",
-        "uri" : "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Analytics_Project_946027af-dd2b-4df8-8d1e-713df27a4990/tables/_EDJVN1SV56BHDMZQWK4274RTA_AST?state=loaded",
+        "name" : "_T7OUQJBSLB26KI7ASWCSC7CY_ast",
+        "uri" : "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Analytics_Project_7eb83254-c321-48b1-a393-69476b2eee16/tables/_T7OUQJBSLB26KI7ASWCSC7CY_AST?state=loaded",
         "uriType" : "copy",
         "contentType" : "astore"
       },
@@ -326,21 +326,21 @@
   "modelNodeProperties" : [ {
     "sequence" : 1,
     "actionName" : "decisionTree.dtreeTrain",
-    "content" : "{\n \"binOrder\": true,\n \"casOut\":\n  {\n   \"caslib\": \"CASUSER(edmdev)\",\n   \"name\": \"_model1_87a5a422-2e3f-8d4b-a06d-800f3f1894\",\n   \"replace\": true\n  },\n \"crit\": \"GAINRATIO\",\n \"encodeName\": true,\n \"inputs\":   \n  [\n   {\n    \"name\": \"CLAGE\"\n   },\n   {\n    \"name\": \"CLNO\"\n   },\n   {\n    \"name\": \"DEBTINC\"\n   },\n   {\n    \"name\": \"LOAN\"\n   },\n   {\n    \"name\": \"MORTDUE\"\n   },\n   {\n    \"name\": \"VALUE\"\n   },\n   {\n    \"name\": \"YOJ\"\n   },\n   {\n    \"name\": \"REASON\"\n   },\n   {\n    \"name\": \"DELINQ\"\n   },\n   {\n    \"name\": \"DEROG\"\n   },\n   {\n    \"name\": \"JOB\"\n   },\n   {\n    \"name\": \"NINQ\"\n   }  \n  ],\n \"leafSize\": 5,\n \"maxBranch\": 2,\n \"maxLevel\": 11,\n \"mergeBin\": true,\n \"minUseInSearch\": 1,\n \"missing\": \"USEINSEARCH\",\n \"nBins\": 50,\n \"nominals\":   \n  [\n   {\n    \"name\": \"REASON\"\n   },\n   {\n    \"name\": \"DELINQ\"\n   },\n   {\n    \"name\": \"DEROG\"\n   },\n   {\n    \"name\": \"JOB\"\n   },\n   {\n    \"name\": \"NINQ\"\n   },\n   {\n    \"name\": \"BAD\"\n   }  \n  ],\n \"nominalSearch\":\n  {\n   \"maxCategories\": 128\n  },\n \"quantileBin\": true,\n \"saveState\":\n  {\n   \"name\": \"_EDJVN1SV56BHDMZQWK4274RTA_AST\",\n   \"replace\": true\n  },\n \"table\":\n  {\n   \"caslib\": \"Analytics_Project_946027af-dd2b-4df8-8d1e-713df27a4990\",\n   \"name\": \"DM_8S8BEE09OAQQ51R4WLXPIVSSW\",\n   \"where\": \"STRIP(PUT(_PartInd_, BEST.) ) =\\\"1\\\" and BAD NE .\"\n  },\n \"target\": \"BAD\"\n}"
+    "content" : "{\n \"binOrder\": true,\n \"casOut\":\n  {\n   \"caslib\": \"CASUSER(edmdev)\",\n   \"name\": \"_model1_94581adc-55ca-eb4c-9163-de09171d55\",\n   \"replace\": true\n  },\n \"crit\": \"GAINRATIO\",\n \"encodeName\": true,\n \"inputs\":   \n  [\n   {\n    \"name\": \"CLAGE\"\n   },\n   {\n    \"name\": \"CLNO\"\n   },\n   {\n    \"name\": \"DEBTINC\"\n   },\n   {\n    \"name\": \"LOAN\"\n   },\n   {\n    \"name\": \"MORTDUE\"\n   },\n   {\n    \"name\": \"VALUE\"\n   },\n   {\n    \"name\": \"YOJ\"\n   },\n   {\n    \"name\": \"REASON\"\n   },\n   {\n    \"name\": \"DELINQ\"\n   },\n   {\n    \"name\": \"DEROG\"\n   },\n   {\n    \"name\": \"JOB\"\n   },\n   {\n    \"name\": \"NINQ\"\n   }  \n  ],\n \"leafSize\": 5,\n \"maxBranch\": 2,\n \"maxLevel\": 11,\n \"mergeBin\": true,\n \"minUseInSearch\": 1,\n \"missing\": \"USEINSEARCH\",\n \"nBins\": 50,\n \"nominals\":   \n  [\n   {\n    \"name\": \"REASON\"\n   },\n   {\n    \"name\": \"DELINQ\"\n   },\n   {\n    \"name\": \"DEROG\"\n   },\n   {\n    \"name\": \"JOB\"\n   },\n   {\n    \"name\": \"NINQ\"\n   },\n   {\n    \"name\": \"BAD\"\n   }  \n  ],\n \"nominalSearch\":\n  {\n   \"maxCategories\": 128\n  },\n \"quantileBin\": true,\n \"saveState\":\n  {\n   \"name\": \"_T7OUQJBSLB26KI7ASWCSC7CY_AST\",\n   \"replace\": true\n  },\n \"table\":\n  {\n   \"caslib\": \"Analytics_Project_7eb83254-c321-48b1-a393-69476b2eee16\",\n   \"name\": \"DM_7I2Q2T9H825KXYJCD3EFNWMQE\",\n   \"where\": \"STRIP(PUT(_PartInd_, BEST.) ) =\\\"1\\\" and BAD NE .\"\n  },\n \"target\": \"BAD\"\n}"
   }, {
     "sequence" : 2,
     "actionName" : "decisionTree.dtreePrune",
-    "content" : "{\n \"casOut\":\n  {\n   \"caslib\": \"CASUSER(edmdev)\",\n   \"name\": \"_model1_87a5a422-2e3f-8d4b-a06d-800f3f1894\",\n   \"replace\": true\n  },\n \"costComplexity\": true,\n \"encodeName\": true,\n \"modelTable\":\n  {\n   \"caslib\": \"CASUSER(edmdev)\",\n   \"name\": \"_model1_87a5a422-2e3f-8d4b-a06d-800f3f1894\"\n  },\n \"saveState\":\n  {\n   \"name\": \"_EDJVN1SV56BHDMZQWK4274RTA_AST\",\n   \"replace\": true\n  },\n \"table\":\n  {\n   \"caslib\": \"Analytics_Project_946027af-dd2b-4df8-8d1e-713df27a4990\",\n   \"name\": \"DM_8S8BEE09OAQQ51R4WLXPIVSSW\",\n   \"where\": \"STRIP(PUT(_PartInd_, BEST.) ) =\\\"0\\\" and BAD NE .\"\n  }\n}"
+    "content" : "{\n \"casOut\":\n  {\n   \"caslib\": \"CASUSER(edmdev)\",\n   \"name\": \"_model1_94581adc-55ca-eb4c-9163-de09171d55\",\n   \"replace\": true\n  },\n \"costComplexity\": true,\n \"encodeName\": true,\n \"modelTable\":\n  {\n   \"caslib\": \"CASUSER(edmdev)\",\n   \"name\": \"_model1_94581adc-55ca-eb4c-9163-de09171d55\"\n  },\n \"saveState\":\n  {\n   \"name\": \"_T7OUQJBSLB26KI7ASWCSC7CY_AST\",\n   \"replace\": true\n  },\n \"table\":\n  {\n   \"caslib\": \"Analytics_Project_7eb83254-c321-48b1-a393-69476b2eee16\",\n   \"name\": \"DM_7I2Q2T9H825KXYJCD3EFNWMQE\",\n   \"where\": \"STRIP(PUT(_PartInd_, BEST.) ) =\\\"0\\\" and BAD NE .\"\n  }\n}"
   } ],
   "rocDataUri" : {
     "name" : "dmcas_roc",
-    "uri" : "/files/files/2a7cef56-c4f0-4c61-842c-b1c933d6dcc5",
+    "uri" : "/files/files/a1ce4db2-3f8d-4eb0-b69b-132da3e4ba2f",
     "uriType" : "child",
     "mediaType" : "application/vnd.sas.analytics.report+json"
   },
   "liftDataUri" : {
     "name" : "dmcas_lift",
-    "uri" : "/files/files/14d441c0-3f6a-4a5c-be49-87d0efdae5ef",
+    "uri" : "/files/files/748ed5fe-71bc-4b63-b911-50d35115ca2f",
     "uriType" : "child",
     "mediaType" : "application/vnd.sas.analytics.report+json"
   }

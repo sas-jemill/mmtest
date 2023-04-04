@@ -88,7 +88,7 @@ proc treesplit data=&dm_datalib..&dm_memnameNlit(&dm_caslibOption)
      maxbranch=2 assignmissing=USEINSEARCH binmethod=QUANTILE nomsearch(maxcategories=128)
      minuseinsearch=1
      pruningtable
-     outmodel=&dm_output_lib.._EDJVN1SV56BHDMZQWK4274RTA_model treeplot printtarget;
+     outmodel=&dm_output_lib.._T7OUQJBSLB26KI7ASWCSC7CY_model treeplot printtarget;
   grow IGR
   ;
   target 'BAD'n / level=nominal;
@@ -96,7 +96,7 @@ proc treesplit data=&dm_datalib..&dm_memnameNlit(&dm_caslibOption)
   input %dm_binary_input %dm_nominal_input %dm_ordinal_input %dm_unary_input / level=nominal;
   partition rolevar='_PartInd_'n (TRAIN='1' VALIDATE='0' TEST='2');
   prune costcomplexity;
-  savestate rstore=&dm_output_lib.._EDJVN1SV56BHDMZQWK4274RTA_ast;
+  savestate rstore=&dm_output_lib.._T7OUQJBSLB26KI7ASWCSC7CY_ast;
   ods output
      CostComplexity = &dm_lib..pruning
      VariableImportance = &dm_lib..varimportance(drop=std) TreePlotTable = &dm_lib..treeplot TreePerformance = &dm_lib..TreePerf

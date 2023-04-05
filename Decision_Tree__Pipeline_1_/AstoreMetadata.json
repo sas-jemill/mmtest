@@ -1,12 +1,12 @@
 [
 	{
-		"name": "_V6XXBC5NYF3DCTX5IQJG6L15XW",
-		"uri": "/dataTables/dataSources/cas~fs~cas-shared-default~fs~ModelStore/tables/_V6XXBC5NYF3DCTX5IQJG6L15XW",
-		"key": "1654D53EEFFDE14D360973A306E4FEA57959DB70",
+		"name": "_GN2NRO564O3XIE56TCV9H7UGFG",
+		"uri": "/dataTables/dataSources/cas~fs~cas-shared-default~fs~ModelStore/tables/_GN2NRO564O3XIE56TCV9H7UGFG",
+		"key": "9636B08DE2FBC5D80727A2A7B7C3A43630FC0F85",
 		"caslib": "ModelStore",
-		"location": "file:///models/astores/viya/_V6XXBC5NYF3DCTX5IQJG6L15XW.astore",
-		"host": "sas-compute-server-aabb28db-d6c6-4df7-82aa-e1db38d7528e-pz5h6",
-		"fullPath": "/opt/sas/viya/config/data/modelsvr/astore/_V6XXBC5NYF3DCTX5IQJG6L15XW.astore",
+		"location": "file:///models/astores/viya/_GN2NRO564O3XIE56TCV9H7UGFG.astore",
+		"host": "sas-compute-server-90ac3110-5fdf-4269-b01e-bb0c5eca3d42-7tkzq",
+		"fullPath": "/opt/sas/viya/config/data/modelsvr/astore/_GN2NRO564O3XIE56TCV9H7UGFG.astore",
 		"state": "success"
 	}
 ]

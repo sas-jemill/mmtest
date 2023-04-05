@@ -1,9 +1,9 @@
 {
-   "creationTimeStamp": "2023-04-04T13:03:02.665Z",
+   "creationTimeStamp": "2023-04-04T13:59:12.910Z",
    "createdBy": "edmdev",
-   "modifiedTimeStamp": "2023-04-04T13:06:10.166Z",
+   "modifiedTimeStamp": "2023-04-04T14:23:17.688Z",
    "modifiedBy": "edmdev",
-   "id": "05df3515-48a7-42ee-a6c8-2cb9ad638e5e",
+   "id": "ae32af23-4930-4cff-a9a8-738cdc3f7144",
    "name": "Decision Tree (Pipeline 1)",
    "scoreCodeType": "ds2MultiType",
    "algorithm": "tree",
@@ -17,8 +17,8 @@
    "targetLevel": "binary",
    "tool": "Model Studio",
    "toolVersion": "V2023.03",
-   "publishTimeStamp": 1680613563437,
-   "externalModelId": "0db50013-abf6-4b67-b544-39ac90ecfc42",
+   "publishTimeStamp": 1680618192415,
+   "externalModelId": "6782d884-dc7c-41ca-b033-9942cc24e35d",
    "modelVersionName": "2.0",
    "custom properties": []
 }

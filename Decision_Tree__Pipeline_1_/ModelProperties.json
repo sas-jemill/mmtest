@@ -1,7 +1,7 @@
 {
    "creationTimeStamp": "2023-04-04T13:59:12.910Z",
    "createdBy": "edmdev",
-   "modifiedTimeStamp": "2023-04-05T12:58:57.817Z",
+   "modifiedTimeStamp": "2023-04-05T13:00:17.974Z",
    "modifiedBy": "edmdev",
    "id": "ae32af23-4930-4cff-a9a8-738cdc3f7144",
    "name": "Decision Tree (Pipeline 1)",
@@ -17,8 +17,8 @@
    "targetLevel": "binary",
    "tool": "Model Studio",
    "toolVersion": "V2023.03",
-   "publishTimeStamp": 1680699532613,
+   "publishTimeStamp": 1680699612656,
    "externalModelId": "6782d884-dc7c-41ca-b033-9942cc24e35d",
-   "modelVersionName": "9.0",
+   "modelVersionName": "10.0",
    "custom properties": []
 }

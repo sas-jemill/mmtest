@@ -1,0 +1,116 @@
+{
+  "creationTimeStamp": "2023-07-27T16:47:55.812459Z",
+  "createdBy": "edmdev",
+  "modifiedTimeStamp": "2023-07-27T16:47:55.81246Z",
+  "modifiedBy": "edmdev",
+  "id": "ded9952a-ad9a-46cc-8c59-09147ecd148f",
+  "destinationName": "sas-jemill-git",
+  "destination": {
+    "creationTimeStamp": "2023-07-25T16:02:16.133332Z",
+    "createdBy": "edmdev",
+    "modifiedTimeStamp": "2023-07-25T16:02:16.133334Z",
+    "modifiedBy": "edmdev",
+    "version": 2,
+    "id": "cc038f45-8069-405f-ae50-994537923f82",
+    "name": "sas-jemill-git",
+    "destinationType": "git",
+    "properties": [
+      {
+        "name": "credDomainId",
+        "value": "sas-jemill-git"
+      },
+      {
+        "name": "remoteRepositoryURL",
+        "value": "https://github.com/sas-jemill/mmtest.git"
+      },
+      {
+        "name": "localRepositoryLocation",
+        "value": "/mmtest"
+      },
+      {
+        "name": "userEmail",
+        "value": "jeff.miller@sas.com"
+      },
+      {
+        "name": "userName",
+        "value": "sas-jemill"
+      },
+      {
+        "name": "codeGenerationMode",
+        "value": "mas"
+      },
+      {
+        "name": "gitBranch",
+        "value": "main"
+      },
+      {
+        "name": "deploymentGitFolder",
+        "value": "/deploymentTest"
+      }
+    ],
+    "links": [
+      {
+        "method": "GET",
+        "rel": "up",
+        "href": "/modelPublish/destinations",
+        "uri": "/modelPublish/destinations",
+        "type": "application/vnd.sas.collection"
+      },
+      {
+        "method": "GET",
+        "rel": "self",
+        "href": "/modelPublish/destinations/sas-jemill-git",
+        "uri": "/modelPublish/destinations/sas-jemill-git",
+        "type": "application/vnd.sas.models.publishing.destination"
+      },
+      {
+        "method": "DELETE",
+        "rel": "delete",
+        "href": "/modelPublish/destinations/sas-jemill-git",
+        "uri": "/modelPublish/destinations/sas-jemill-git"
+      },
+      {
+        "method": "PUT",
+        "rel": "update",
+        "href": "/modelPublish/destinations/sas-jemill-git",
+        "uri": "/modelPublish/destinations/sas-jemill-git",
+        "type": "application/vnd.sas.models.publishing.destination"
+      },
+      {
+        "method": "GET",
+        "rel": "getGitFolders",
+        "href": "/modelPublish/destinations/sas-jemill-git/gitFolders",
+        "uri": "/modelPublish/destinations/sas-jemill-git/gitFolders",
+        "type": "application/vnd.sas.collection"
+      }
+    ]
+  },
+  "content": {
+    "creationTimeStamp": "0001-01-01T00:00:00Z",
+    "modifiedTimeStamp": "0001-01-01T00:00:00Z",
+    "modelName": "QS_Reg_PyModel",
+    "principalID": "e5fe68d3-baea-489b-97e9-14169ceb1de8",
+    "codeType": "python",
+    "code": "import argparse\nimport os\nimport os.path\nimport sys\nimport pandas as pd\nimport settings\nsettings.pickle_path = './'\nimport hmeq_logistic_score\nparser = argparse.ArgumentParser(description='Score')\nparser.add_argument('-m', dest='modelFile', help='model filename, default will be the model file hardcoded in the script')\nparser.add_argument('-i', dest='scoreInputCSV', required=True, help='input filename')\nparser.add_argument('-o', dest='scoreOutputCSV', required=True, help='output csv filename')\nargs = parser.parse_args()\nmodel_file = args.modelFile\nscore_input_csv = args.scoreInputCSV\nscore_output_csv = args.scoreOutputCSV\nif not os.path.isfile(score_input_csv):\n    print('Not found input file',score_input_csv)\n    sys.exit()\ninput_df = pd.read_csv(os.path.join(os.getcwd(), score_input_csv))\nrowResult = []\nfor i, row in input_df.iterrows():\n    rowResult.append(hmeq_logistic_score.scoreHMEQLogisticModel(row['JOB'],row['REASON'],row['CLAGE'],row['CLNO'],row['DEBTINC'],row['DELINQ'],row['DEROG'],row['NINQ'],row['YOJ']))\noutput_df = pd.DataFrame(rowResult, columns=['EM_EVENTPROBABILITY', 'EM_CLASSIFICATION'])\noutput_df = pd.merge(input_df, output_df, how='inner', left_index=True, right_index=True)\noutput_df.to_csv(score_output_csv, sep=',', index=False)\n",
+    "sourceURI": "/modelRepository/models/e5fe68d3-baea-489b-97e9-14169ceb1de8",
+    "projectID": "aa8c46a4-0811-48a0-9887-8fa353e189c8",
+    "projectVersionID": "4cff517d-41aa-437a-86b7-5068643cfc62",
+    "modelID": "e5fe68d3-baea-489b-97e9-14169ceb1de8",
+    "modelVersionID": "2.0",
+    "publishLevel": "model",
+    "variableXML": "\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003cScore\u003e\n  \u003cTargetList\u003e\u003c/TargetList\u003e\n  \u003cProducer\u003e\n    \u003cName\u003eSAS Model Manager\u003c/Name\u003e\n    \u003cVersion\u003e15.1\u003c/Version\u003e\n  \u003c/Producer\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"JOB\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"REASON\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"CLAGE\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"CLNO\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"DEBTINC\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"DELINQ\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"DEROG\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"NINQ\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"YOJ\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cOutput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"EM_EVENTPROBABILITY\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Output\u003e\n  \u003cOutput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"EM_CLASSIFICATION\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Output\u003e\n\u003c/Score\u003e"
+  },
+  "properties": {
+    "gitFolderPath": "QS_Reg_PyModel",
+    "gitRepositoryURL": "https://github.com/sas-jemill/mmtest.git"
+  },
+  "sourceURI": "/modelRepository/models/e5fe68d3-baea-489b-97e9-14169ceb1de8",
+  "inputVariables": null,
+  "outputVariables": null,
+  "component": {},
+  "product": {},
+  "service": {
+    "name": "Model Publish service"
+  },
+  "baseImage": {}
+}

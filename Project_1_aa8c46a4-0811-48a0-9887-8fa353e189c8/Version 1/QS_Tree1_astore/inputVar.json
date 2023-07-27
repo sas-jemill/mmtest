@@ -1,0 +1,52 @@
+[
+   {
+      "name": "CLAGE",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "DEBTINC",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "DELINQ",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "nominal",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "DEROG",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "nominal",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "VALUE",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   }
+]

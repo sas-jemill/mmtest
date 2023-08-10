@@ -1,0 +1,15 @@
+Application:
+  Name: qst_nick
+MasterImage:
+  URL: repulpmaster.unx.sas.com/viya-4-x64_oci_linux_2-docker-testready/sas-decisions-runtime-components:1.40.11-20230727.1690432191153
+BaseImage:
+  URL: repulpmaster.unx.sas.com/viya-4-x64_oci_linux_2-docker-testready/sas-decisions-runtime-base:1.58.11-20230727.1690431186632
+Destination:
+  URL: repulpmaster.unx.sas.com
+  ImageName: QST_nick
+  Tags:
+  - latest
+ResourceCategories: []
+Languages: []
+Databases: []
+PythonResources: []

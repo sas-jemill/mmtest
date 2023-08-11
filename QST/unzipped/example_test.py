@@ -14,4 +14,4 @@ def score_record(JOB,REASON,CLAGE,CLNO,DEBTINC,DELINQ,DEROG,NINQ,YOJ):
     "Output: EM_EVENTPROBABILITY,EM_CLASSIFICATION"
     return hmeq_logistic_score.scoreHMEQLogisticModel(JOB,REASON,CLAGE,CLNO,DEBTINC,DELINQ,DEROG,NINQ,YOJ)
 
-print(score_record("","",26.22,188.13,17.64,89.78,89.45,180.22,37.28))
+print(score_record("","",49.93,174.47,46.67,60.05,54.92,90.12,97.40))

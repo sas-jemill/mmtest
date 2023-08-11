@@ -6,7 +6,7 @@
 #ENV SAS_SCR_APP_PATH=/qst_nick
 #COPY --chown=sas:sas unzipped/ /modules/
 #COPY --chown=sas:sas manifest/ /manifest/
-3ENV LD_LIBRARY_PATH=/opt/scr/viya/home/SASFoundation/utilities/bin:/opt/scr/viya/home/SASFoundation/sasexe
+#ENV LD_LIBRARY_PATH=/opt/scr/viya/home/SASFoundation/utilities/bin:/opt/scr/viya/home/SASFoundation/sasexe
 
 FROM registry.unx.sas.com/oscr/pcr-py310:v8
 

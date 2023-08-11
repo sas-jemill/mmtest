@@ -1,7 +1,7 @@
 {
    "creationTimeStamp": "2023-08-10T17:34:09.548Z",
    "createdBy": "edmdev",
-   "modifiedTimeStamp": "2023-08-11T14:01:30.781Z",
+   "modifiedTimeStamp": "2023-08-11T14:08:38.682Z",
    "modifiedBy": "edmdev",
    "id": "18519eb0-f8b3-414e-97da-b3e8650f68df",
    "name": "QST",
@@ -19,7 +19,7 @@
    "targetLevel": "binary",
    "tool": "Python 3",
    "toolVersion": "3.7.6",
-   "publishTimeStamp": 1691693424048,
-   "modelVersionName": "2.0",
+   "publishTimeStamp": 1691762545185,
+   "modelVersionName": "3.0",
    "custom properties": []
 }

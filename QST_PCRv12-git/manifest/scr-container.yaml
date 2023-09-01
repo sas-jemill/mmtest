@@ -1,0 +1,15 @@
+Application:
+  Name: qst_pcrv12-git
+MasterImage:
+  URL: registry.unx.sas.com/oscr/viya-4-x64_oci_linux_2-docker-testready/sas-decisions-runtime-components:1.42.9-20230823.1692765242071
+BaseImage:
+  URL: registry.unx.sas.com/oscr/viya-4-x64_oci_linux_2-docker-testready/sas-decisions-runtime-base:1.60.9-20230823.1692764510693
+Destination:
+  URL: registry.unx.sas.com/oscr
+  ImageName: QST_PCRv12-git
+  Tags:
+  - latest
+ResourceCategories: []
+Languages: []
+Databases: []
+PythonResources: []

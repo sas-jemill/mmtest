@@ -1,0 +1,15 @@
+Application:
+  Name: qs_tree1
+MasterImage:
+  URL: repulpmaster.unx.sas.com/viya-4-x64_oci_linux_2-docker-testready/sas-decisions-runtime-components:1.44.29-20231016.1697430244334
+BaseImage:
+  URL: repulpmaster.unx.sas.com/viya-4-x64_oci_linux_2-docker-testready/sas-decisions-runtime-base:1.62.29-20231016.1697429300216
+Destination:
+  URL: repulpmaster.unx.sas.com
+  ImageName: QS_Tree1
+  Tags:
+  - latest
+ResourceCategories: []
+Languages: []
+Databases: []
+PythonResources: []

@@ -1,0 +1,14 @@
+[
+   {
+      "name": "inputVar.json",
+      "role": "inputVariables"
+   },
+   {
+      "name": "outputVar.json",
+      "role": "outputVariables"
+   },
+   {
+      "name": "dmcas_scorecode.sas",
+      "role": "score"
+   }
+]

@@ -1,0 +1,40 @@
+source: 1    %mm_dstrans (
+source: 2    dscodeFileUri=%nrstr(/files/files/6ab1002f-79b8-408c-b5bc-38d8bc39d4ab),
+source: 3    xmlFileUri=%nrstr(/files/files/a65072e9-f6c6-41a8-9b51-f9d1c02c6ae4),ds2epFileUri=%nrstr(),ds2pkgFileUri=%nrstr(/files/files/fb
+source: 3  ! 956c73-bd7e-4f56-9e5e-6263aed157ac));
+note: 
+note: NOTE: Copy Data Step score code file to local.
+note: NOTE: DATA statement used (Total process time):
+note:       real time           0.20 seconds
+note:       cpu time            0.02 seconds
+note:       
+note: 
+note: 
+note: NOTE: Copy score XML file to local.
+note: NOTE: DATA statement used (Total process time):
+note:       real time           0.17 seconds
+note:       cpu time            0.00 seconds
+note:       
+note: 
+note: 
+note: NOTE: PROCEDURE DSTRANS used (Total process time):
+note:       real time           0.20 seconds
+note:       cpu time            0.04 seconds
+note:       
+note: 
+note: 
+note: NOTE: Copy DS2 Package file to file service.
+title: 2                                                          The SAS System                     Tuesday, November 21, 2023 06:39:00 PM
+title: 
+note: NOTE: DATA statement used (Total process time):
+note:       real time           0.54 seconds
+note:       cpu time            0.01 seconds
+note:       
+note: 
+note: NOTE: Fileref _DS2PKG has been deassigned.
+note: NOTE: Fileref DS2PKG has been deassigned.
+note: NOTE: Fileref _DSCODE has been deassigned.
+note: NOTE: Fileref DSCODE has been deassigned.
+note: NOTE: Fileref _SCRXML has been deassigned.
+note: NOTE: Fileref SCRXML has been deassigned.
+note: 

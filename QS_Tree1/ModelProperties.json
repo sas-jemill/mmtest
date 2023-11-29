@@ -1,7 +1,7 @@
 {
    "creationTimeStamp": "2023-11-21T18:39:17.959Z",
    "createdBy": "edmdev",
-   "modifiedTimeStamp": "2023-11-29T20:36:17.054Z",
+   "modifiedTimeStamp": "2023-11-29T20:37:26.170Z",
    "modifiedBy": "edmdev",
    "id": "86764814-3d8f-4045-a92f-c9a26742922c",
    "name": "QS_Tree1",
@@ -18,8 +18,8 @@
    "targetLevel": "binary",
    "tool": "Model Studio",
    "toolVersion": "8.3",
-   "publishTimeStamp": 1701290171576,
+   "publishTimeStamp": 1701290241637,
    "externalModelId": "0895f86a-dff5-4b5e-ab40-f7a53f476979",
-   "modelVersionName": "9.0",
+   "modelVersionName": "10.0",
    "custom properties": []
 }

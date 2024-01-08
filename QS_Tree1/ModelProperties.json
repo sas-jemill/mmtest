@@ -1,9 +1,9 @@
 {
-   "creationTimeStamp": "2023-12-07T15:02:06.223Z",
+   "creationTimeStamp": "2024-01-05T17:56:56.445Z",
    "createdBy": "edmdev",
-   "modifiedTimeStamp": "2023-12-07T15:40:11.300Z",
+   "modifiedTimeStamp": "2024-01-05T18:04:17.647Z",
    "modifiedBy": "edmdev",
-   "id": "54224a3f-541f-43f4-bdc1-73b7778877e4",
+   "id": "1f16ce1e-8462-4c76-9135-c4d4c9be3079",
    "name": "QS_Tree1",
    "description": "Decision Tree",
    "scoreCodeType": "dataStep",
@@ -18,8 +18,8 @@
    "targetLevel": "binary",
    "tool": "Model Studio",
    "toolVersion": "8.3",
-   "publishTimeStamp": 1701963605711,
+   "publishTimeStamp": 1704477852396,
    "externalModelId": "0895f86a-dff5-4b5e-ab40-f7a53f476979",
-   "modelVersionName": "3.0",
+   "modelVersionName": "2.0",
    "custom properties": []
 }

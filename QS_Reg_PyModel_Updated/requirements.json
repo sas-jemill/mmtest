@@ -1,0 +1,10 @@
+[
+    {
+        "step":"install statsmodels ",
+        "command":"pip3 install statsmodels"
+    },
+    {
+    	"step":"install pandas",
+    	"command":"pip3 install pandas==1.5.3"
+    }
+]

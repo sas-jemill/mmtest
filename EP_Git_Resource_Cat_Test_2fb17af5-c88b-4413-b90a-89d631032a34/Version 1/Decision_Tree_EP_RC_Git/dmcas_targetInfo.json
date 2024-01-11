@@ -1,0 +1,57 @@
+{
+  "product" : "DMCAS",
+  "project" : "f7201051-ccd1-4b8c-bc58-3a6a19d97b26",
+  "target" : {
+    "name" : "BAD",
+    "level" : "BINARY",
+    "format" : "",
+    "order" : "",
+    "label" : "",
+    "event" : "           1",
+    "SASJSONExport" : "1.0 PRETTY",
+    "SASTableData+DMCAS_TARGETLEVEL" : [ {
+      "_TYPE_" : "",
+      "resourceId" : "fdc03577-e746-4203-b6e5-01bcbf7e04aa",
+      "id" : "f7201051-ccd1-4b8c-bc58-3a6a19d97b26",
+      "_predictedvar_" : "I_BAD",
+      "_variable_" : "BAD",
+      "_rawchar_" : "",
+      "_cfmt_" : "",
+      "_label_" : "Into: BAD",
+      "_event_flag_" : "N",
+      "revision" : 0
+    }, {
+      "_TYPE_" : "",
+      "resourceId" : "0c13559e-c3d4-401e-89a4-3bd8d76dae72",
+      "id" : "f7201051-ccd1-4b8c-bc58-3a6a19d97b26",
+      "_predictedvar_" : "P_BAD1",
+      "_variable_" : "BAD",
+      "_index_" : 1,
+      "_freq_" : 1257,
+      "freqPercent" : 21.0906040268,
+      "nmissPercent" : 21.0906040268,
+      "_rawnum_" : 1,
+      "_rawchar_" : "",
+      "_cfmt_" : "           1",
+      "_label_" : "Predicted: BAD=1",
+      "_event_flag_" : "Y",
+      "revision" : 0
+    }, {
+      "_TYPE_" : "",
+      "resourceId" : "c810f6e3-13d8-4aed-9c1b-1adec71169c4",
+      "id" : "f7201051-ccd1-4b8c-bc58-3a6a19d97b26",
+      "_predictedvar_" : "P_BAD0",
+      "_variable_" : "BAD",
+      "_index_" : 2,
+      "_freq_" : 4703,
+      "freqPercent" : 78.9093959732,
+      "nmissPercent" : 78.9093959732,
+      "_rawnum_" : 0,
+      "_rawchar_" : "",
+      "_cfmt_" : "           0",
+      "_label_" : "Predicted: BAD=0",
+      "_event_flag_" : "N",
+      "revision" : 0
+    } ]
+  }
+}

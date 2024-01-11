@@ -1,0 +1,14 @@
+[
+   {
+      "name": "dmcas_epscorecode.sas",
+      "role": "score"
+   },
+   {
+      "name": "inputVar.json",
+      "role": "inputVariables"
+   },
+   {
+      "name": "outputVar.json",
+      "role": "outputVariables"
+   }
+]

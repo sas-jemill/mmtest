@@ -1,0 +1,23 @@
+{
+   "creationTimeStamp": "2024-01-11T19:30:26.993Z",
+   "createdBy": "edmdev",
+   "modifiedTimeStamp": "2024-01-11T19:30:33.505Z",
+   "modifiedBy": "edmdev",
+   "id": "d351d916-7e4e-4e2c-b3ee-88d7c67e65e6",
+   "name": "Decision Tree EP RC Git",
+   "scoreCodeType": "ds2MultiType",
+   "algorithm": "tree",
+   "function": "classification",
+   "modeler": "edmdev",
+   "modelType": "astore",
+   "trainTable": "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Public/tables/HMEQ_Q1",
+   "eventProbVar": "P_BAD1",
+   "targetVariable": "BAD",
+   "targetEvent": "1",
+   "targetLevel": "binary",
+   "tool": "Model Studio",
+   "toolVersion": "V2022.10",
+   "externalModelId": "856f1365-85c1-46fb-ade0-26190b46ac66",
+   "modelVersionName": "1.0",
+   "custom properties": []
+}

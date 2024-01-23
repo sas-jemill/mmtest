@@ -1,7 +1,7 @@
 {
    "creationTimeStamp": "2024-01-19T14:42:08.459Z",
    "createdBy": "edmdev",
-   "modifiedTimeStamp": "2024-01-23T18:52:29.865Z",
+   "modifiedTimeStamp": "2024-01-23T18:54:25.267Z",
    "modifiedBy": "edmdev",
    "id": "addc8726-7450-4189-afe0-877796e874b6",
    "name": "QS_Reg1",
@@ -18,8 +18,8 @@
    "targetLevel": "binary",
    "tool": "Model Studio",
    "toolVersion": "8.3",
-   "publishTimeStamp": 1706035942775,
+   "publishTimeStamp": 1706036058602,
    "externalModelId": "407fbf89-7085-49c3-811a-7f5d912e4676",
-   "modelVersionName": "3.0",
+   "modelVersionName": "4.0",
    "custom properties": []
 }

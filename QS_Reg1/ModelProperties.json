@@ -1,9 +1,9 @@
 {
-   "creationTimeStamp": "2023-11-30T18:33:25.875Z",
+   "creationTimeStamp": "2024-01-19T14:42:08.459Z",
    "createdBy": "edmdev",
-   "modifiedTimeStamp": "2023-11-30T19:53:18.408Z",
+   "modifiedTimeStamp": "2024-01-23T18:50:35.402Z",
    "modifiedBy": "edmdev",
-   "id": "6f1de5bc-a94c-45b0-aefd-affb9e0bfcdc",
+   "id": "addc8726-7450-4189-afe0-877796e874b6",
    "name": "QS_Reg1",
    "description": "Logistic Regression",
    "scoreCodeType": "dataStep",
@@ -18,7 +18,7 @@
    "targetLevel": "binary",
    "tool": "Model Studio",
    "toolVersion": "8.3",
-   "publishTimeStamp": 1701373990257,
+   "publishTimeStamp": 1706035827028,
    "externalModelId": "407fbf89-7085-49c3-811a-7f5d912e4676",
    "modelVersionName": "2.0",
    "custom properties": []

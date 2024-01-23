@@ -21,7 +21,11 @@ ds2_options sas tkgmac scond=none;
  dcl double EM_EVENTPROBABILITY;
  dcl char(32) EM_CLASSIFICATION;
  dcl double EM_PROBABILITY;
- method score();
+ method score(double "CLAGE", double "CLNO", double "DEBTINC", double 
+"DELINQ", double "DEROG", char(7) "JOB", double "NINQ", char(7) "REASON", 
+double "VALUE", double "YOJ", in_out char(1) "EM_CLASSIFICATION", in_out 
+double "EM_EVENTPROBABILITY", in_out double "EM_PROBABILITY", in_out char(1) 
+"I_BAD", in_out double "P_BAD0", in_out double "P_BAD1");
 dcl char(2) _IMP_DELINQ_;
  dcl char(1) _LEVELS_41660269_[2];
  dcl double _BETA_41660269_0_[12];

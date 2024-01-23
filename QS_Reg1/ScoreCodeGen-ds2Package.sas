@@ -1,3 +1,3 @@
 %mm_dstrans (
-dscodeFileUri=%nrstr(/files/files/59920096-f9cf-4b7a-8c6f-037690133148),
-xmlFileUri=%nrstr(/files/files/af3802d9-c059-4e7e-b3c2-e27876dc382b),ds2epFileUri=%nrstr(),ds2pkgFileUri=%nrstr(/files/files/9ec6ede2-6558-4807-acc6-29232f28118e));
+dscodeFileUri=%nrstr(/files/files/9e976efb-fa87-45eb-b40c-a48e2a28d71c),
+xmlFileUri=%nrstr(/files/files/779d9ecb-bc75-44fb-9010-f740ddaf816c),ds2epFileUri=%nrstr(),ds2pkgFileUri=%nrstr(/files/files/3f13badb-b9f9-4a62-ab49-f7b22ed8e0b8));

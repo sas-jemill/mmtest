@@ -1,0 +1,602 @@
+[
+   {
+      "name": "Sonar_0",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_1",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_2",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_3",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_4",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_5",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_6",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_7",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_8",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_9",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_10",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_11",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_12",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_13",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_14",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_15",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_16",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_17",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_18",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_19",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_20",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_21",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_22",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_23",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_24",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_25",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_26",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_27",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_28",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_29",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_30",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_31",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_32",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_33",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_34",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_35",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_36",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_37",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_38",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_39",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_40",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_41",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_42",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_43",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_44",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_45",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_46",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_47",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_48",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_49",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_50",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_51",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_52",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_53",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_54",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_55",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_56",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_57",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_58",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "Sonar_59",
+      "description": "",
+      "role": "input",
+      "type": "decimal",
+      "level": "interval",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   }
+]

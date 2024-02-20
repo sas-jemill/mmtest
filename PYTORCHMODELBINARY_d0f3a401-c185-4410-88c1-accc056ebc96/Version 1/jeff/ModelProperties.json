@@ -1,0 +1,22 @@
+{
+   "creationTimeStamp": "2024-02-20T14:41:45.153Z",
+   "createdBy": "edmdev",
+   "modifiedTimeStamp": "2024-02-20T14:41:48.126Z",
+   "modifiedBy": "edmdev",
+   "id": "b2594160-9dcf-465f-98a4-fc7da950ffe5",
+   "name": "model",
+   "description": "Description for the deep model.",
+   "scoreCodeType": "python",
+   "function": "Classification",
+   "modeler": "DEMO",
+   "modelType": "python",
+   "trainCodeType": "Python",
+   "eventProbVar": "P_1",
+   "targetVariable": "R",
+   "targetEvent": "1",
+   "targetLevel": "binary",
+   "tool": "Python 3",
+   "toolVersion": "3.11.5",
+   "modelVersionName": "1.0",
+   "custom properties": []
+}

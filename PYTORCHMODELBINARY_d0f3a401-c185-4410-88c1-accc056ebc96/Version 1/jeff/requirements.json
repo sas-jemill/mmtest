@@ -1,0 +1,10 @@
+[
+  {
+    "command": "pip install transformers",
+    "step": "install transformers"
+  },
+  {
+    "command": "pip install torch",
+    "step": "install torch"
+  }
+]

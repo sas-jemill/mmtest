@@ -1,0 +1,84 @@
+package pythonScore / overwrite=yes;
+dcl package pymas pm;
+dcl package logger logr('App.MM.Python.DS2');
+dcl varchar(32767) character set utf8 pypgm;
+dcl int resultCode revision;
+
+method score(double "Age",
+varchar(100) "WorkClass",
+varchar(100) "Education",
+varchar(100) "MartialStatus",
+varchar(100) "Relationship",
+varchar(100) "Race",
+varchar(100) "Sex",
+double "HoursPerWeek",
+double "GE50K",
+in_out double resultCode,
+in_out varchar(100) "EM_CLASSIFICATION",
+in_out double "EM_EVENTPROBABILITY");
+
+   resultCode = revision = 0;
+   if null(pm) then do;
+      pm = _new_ pymas();
+      resultCode = pm.useModule('model_exec_4a5b65ae-5c10-4eda-b1b6-32dd7b7d0d90', 1);
+      if resultCode then do;
+         resultCode = pm.appendSrcLine('import sys');
+         resultCode = pm.appendSrcLine('sys.path.append("/models/resources/viya/5f7118c4-072a-4daa-9f55-573f50f13dd8/")');
+         resultCode = pm.appendSrcLine('import settings_5f7118c4_072a_4daa_9f55_573f50f13dd8');
+         resultCode = pm.appendSrcLine('settings_5f7118c4_072a_4daa_9f55_573f50f13dd8.pickle_path = "/models/resources/viya/5f7118c4-072a-4daa-9f55-573f50f13dd8/"');
+         resultCode = pm.appendSrcLine('import score_dtc_d2ba4417_5924_44ff_9d01_b89f2329af63');
+         resultCode = pm.appendSrcLine('def score(Age, WorkClass, Education, MartialStatus, Relationship, Race, Sex, HoursPerWeek, GE50K):');
+         resultCode = pm.appendSrcLine('    "Output: EM_CLASSIFICATION, EM_EVENTPROBABILITY"');
+         resultCode = pm.appendSrcLine('    return score_dtc_d2ba4417_5924_44ff_9d01_b89f2329af63.score(Age, WorkClass, Education, MartialStatus, Relationship, Race, Sex, HoursPerWeek, GE50K)');
+
+         revision = pm.publish(pm.getSource(), 'model_exec_4a5b65ae-5c10-4eda-b1b6-32dd7b7d0d90');
+         if ( revision < 1 ) then do;
+            logr.log( 'e', 'py.publish() failed.');
+            resultCode = -1;
+            return;
+         end;
+      end;
+   end;
+
+   resultCode = pm.useMethod('score');
+   if resultCode then do;
+      logr.log('E', 'useMethod() failed. resultCode=$s', resultCode);
+      return;
+   end;
+   resultCode = pm.setDouble('Age', "Age");
+   if resultCode then
+      logr.log('E', 'setDouble for Age failed.  resultCode=$s', resultCode);
+   resultCode = pm.setString('WorkClass', "WorkClass");
+   if resultCode then
+      logr.log('E', 'setString for WorkClass failed.  resultCode=$s', resultCode);
+   resultCode = pm.setString('Education', "Education");
+   if resultCode then
+      logr.log('E', 'setString for Education failed.  resultCode=$s', resultCode);
+   resultCode = pm.setString('MartialStatus', "MartialStatus");
+   if resultCode then
+      logr.log('E', 'setString for MartialStatus failed.  resultCode=$s', resultCode);
+   resultCode = pm.setString('Relationship', "Relationship");
+   if resultCode then
+      logr.log('E', 'setString for Relationship failed.  resultCode=$s', resultCode);
+   resultCode = pm.setString('Race', "Race");
+   if resultCode then
+      logr.log('E', 'setString for Race failed.  resultCode=$s', resultCode);
+   resultCode = pm.setString('Sex', "Sex");
+   if resultCode then
+      logr.log('E', 'setString for Sex failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('HoursPerWeek', "HoursPerWeek");
+   if resultCode then
+      logr.log('E', 'setDouble for HoursPerWeek failed.  resultCode=$s', resultCode);
+   resultCode = pm.setDouble('GE50K', "GE50K");
+   if resultCode then
+      logr.log('E', 'setDouble for GE50K failed.  resultCode=$s', resultCode);
+   resultCode = pm.execute();
+   if (resultCode) then
+      logr.log('E', 'Error: pm.execute failed.  resultCode=$s', resultCode);
+   else do;
+      "EM_CLASSIFICATION" = pm.getString('EM_CLASSIFICATION');
+      "EM_EVENTPROBABILITY" = pm.getDouble('EM_EVENTPROBABILITY');
+   end;
+end;
+
+endpackage;

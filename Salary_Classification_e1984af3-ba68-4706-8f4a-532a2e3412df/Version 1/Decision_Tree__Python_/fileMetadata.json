@@ -1,0 +1,30 @@
+[
+   {
+      "name": "dtc.pickle",
+      "role": "scoreResource"
+   },
+   {
+      "name": "inputVar.json",
+      "role": "inputVariables"
+   },
+   {
+      "name": "outputVar.json",
+      "role": "outputVariables"
+   },
+   {
+      "name": "score_dtc.py",
+      "role": "score"
+   },
+   {
+      "name": "DS2Pkg_PythonWrapper.sas",
+      "role": "scoreResource"
+   },
+   {
+      "name": "settings.py",
+      "role": "scoreResource"
+   },
+   {
+      "name": "example_test.py",
+      "role": "scoreResource"
+   }
+]

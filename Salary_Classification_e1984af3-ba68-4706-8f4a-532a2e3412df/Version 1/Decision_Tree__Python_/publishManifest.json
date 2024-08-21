@@ -1,0 +1,116 @@
+{
+  "creationTimeStamp": "2024-08-21T17:46:04.973509Z",
+  "createdBy": "edmdev",
+  "modifiedTimeStamp": "2024-08-21T17:46:04.973509Z",
+  "modifiedBy": "edmdev",
+  "id": "47e1136d-66da-433b-aa8d-b4ae67838611",
+  "destinationName": "sas-jemill-git",
+  "destination": {
+    "creationTimeStamp": "2024-08-21T17:27:28.320796Z",
+    "createdBy": "edmdev",
+    "modifiedTimeStamp": "2024-08-21T17:27:28.320796Z",
+    "modifiedBy": "edmdev",
+    "version": 2,
+    "id": "57b21749-cab9-4302-a777-84a5ea70f881",
+    "name": "sas-jemill-git",
+    "destinationType": "git",
+    "properties": [
+      {
+        "name": "credDomainId",
+        "value": "sas-jemill-git"
+      },
+      {
+        "name": "remoteRepositoryURL",
+        "value": "https://github.com/sas-jemill/mmtest.git"
+      },
+      {
+        "name": "localRepositoryLocation",
+        "value": "/mmtest"
+      },
+      {
+        "name": "userEmail",
+        "value": "jeff.miller@sas.com"
+      },
+      {
+        "name": "userName",
+        "value": "sas-jemill"
+      },
+      {
+        "name": "codeGenerationMode",
+        "value": "mas"
+      },
+      {
+        "name": "gitBranch",
+        "value": "main"
+      },
+      {
+        "name": "deploymentGitFolder",
+        "value": "/deploymentTest"
+      }
+    ],
+    "links": [
+      {
+        "method": "GET",
+        "rel": "up",
+        "href": "/modelPublish/destinations",
+        "uri": "/modelPublish/destinations",
+        "type": "application/vnd.sas.collection"
+      },
+      {
+        "method": "GET",
+        "rel": "self",
+        "href": "/modelPublish/destinations/sas-jemill-git",
+        "uri": "/modelPublish/destinations/sas-jemill-git",
+        "type": "application/vnd.sas.models.publishing.destination"
+      },
+      {
+        "method": "DELETE",
+        "rel": "delete",
+        "href": "/modelPublish/destinations/sas-jemill-git",
+        "uri": "/modelPublish/destinations/sas-jemill-git"
+      },
+      {
+        "method": "PUT",
+        "rel": "update",
+        "href": "/modelPublish/destinations/sas-jemill-git",
+        "uri": "/modelPublish/destinations/sas-jemill-git",
+        "type": "application/vnd.sas.models.publishing.destination"
+      },
+      {
+        "method": "GET",
+        "rel": "getGitFolders",
+        "href": "/modelPublish/destinations/sas-jemill-git/gitFolders",
+        "uri": "/modelPublish/destinations/sas-jemill-git/gitFolders",
+        "type": "application/vnd.sas.collection"
+      }
+    ]
+  },
+  "content": {
+    "creationTimeStamp": "0001-01-01T00:00:00Z",
+    "modifiedTimeStamp": "0001-01-01T00:00:00Z",
+    "modelName": "Decision_Tree__Python_",
+    "principalID": "5f7118c4-072a-4daa-9f55-573f50f13dd8",
+    "codeType": "python",
+    "code": "package Decision_Tree__Python_ / overwrite=yes;\ndcl package pymas pm;\ndcl package logger logr('App.MM.Python.DS2');\ndcl varchar(32767) character set utf8 pypgm;\ndcl int resultCode revision;\n\nmethod score(double \"Age\",\nvarchar(100) \"WorkClass\",\nvarchar(100) \"Education\",\nvarchar(100) \"MartialStatus\",\nvarchar(100) \"Relationship\",\nvarchar(100) \"Race\",\nvarchar(100) \"Sex\",\ndouble \"HoursPerWeek\",\ndouble \"GE50K\",\nin_out double resultCode,\nin_out varchar(100) \"EM_CLASSIFICATION\",\nin_out double \"EM_EVENTPROBABILITY\");\n\n   resultCode = revision = 0;\n   if null(pm) then do;\n      pm = _new_ pymas();\n      resultCode = pm.useModule('model_exec_4a5b65ae-5c10-4eda-b1b6-32dd7b7d0d90', 1);\n      if resultCode then do;\n         resultCode = pm.appendSrcLine('import sys');\n         resultCode = pm.appendSrcLine('sys.path.append(\"/models/resources/viya/5f7118c4-072a-4daa-9f55-573f50f13dd8/\")');\n         resultCode = pm.appendSrcLine('import settings_5f7118c4_072a_4daa_9f55_573f50f13dd8');\n         resultCode = pm.appendSrcLine('settings_5f7118c4_072a_4daa_9f55_573f50f13dd8.pickle_path = \"/models/resources/viya/5f7118c4-072a-4daa-9f55-573f50f13dd8/\"');\n         resultCode = pm.appendSrcLine('import score_dtc_d2ba4417_5924_44ff_9d01_b89f2329af63');\n         resultCode = pm.appendSrcLine('def score(Age, WorkClass, Education, MartialStatus, Relationship, Race, Sex, HoursPerWeek, GE50K):');\n         resultCode = pm.appendSrcLine('    \"Output: EM_CLASSIFICATION, EM_EVENTPROBABILITY\"');\n         resultCode = pm.appendSrcLine('    return score_dtc_d2ba4417_5924_44ff_9d01_b89f2329af63.score(Age, WorkClass, Education, MartialStatus, Relationship, Race, Sex, HoursPerWeek, GE50K)');\n\n         revision = pm.publish(pm.getSource(), 'model_exec_4a5b65ae-5c10-4eda-b1b6-32dd7b7d0d90');\n         if ( revision \u003c 1 ) then do;\n            logr.log( 'e', 'py.publish() failed.');\n            resultCode = -1;\n            return;\n         end;\n      end;\n   end;\n\n   resultCode = pm.useMethod('score');\n   if resultCode then do;\n      logr.log('E', 'useMethod() failed. resultCode=$s', resultCode);\n      return;\n   end;\n   resultCode = pm.setDouble('Age', \"Age\");\n   if resultCode then\n      logr.log('E', 'setDouble for Age failed.  resultCode=$s', resultCode);\n   resultCode = pm.setString('WorkClass', \"WorkClass\");\n   if resultCode then\n      logr.log('E', 'setString for WorkClass failed.  resultCode=$s', resultCode);\n   resultCode = pm.setString('Education', \"Education\");\n   if resultCode then\n      logr.log('E', 'setString for Education failed.  resultCode=$s', resultCode);\n   resultCode = pm.setString('MartialStatus', \"MartialStatus\");\n   if resultCode then\n      logr.log('E', 'setString for MartialStatus failed.  resultCode=$s', resultCode);\n   resultCode = pm.setString('Relationship', \"Relationship\");\n   if resultCode then\n      logr.log('E', 'setString for Relationship failed.  resultCode=$s', resultCode);\n   resultCode = pm.setString('Race', \"Race\");\n   if resultCode then\n      logr.log('E', 'setString for Race failed.  resultCode=$s', resultCode);\n   resultCode = pm.setString('Sex', \"Sex\");\n   if resultCode then\n      logr.log('E', 'setString for Sex failed.  resultCode=$s', resultCode);\n   resultCode = pm.setDouble('HoursPerWeek', \"HoursPerWeek\");\n   if resultCode then\n      logr.log('E', 'setDouble for HoursPerWeek failed.  resultCode=$s', resultCode);\n   resultCode = pm.setDouble('GE50K', \"GE50K\");\n   if resultCode then\n      logr.log('E', 'setDouble for GE50K failed.  resultCode=$s', resultCode);\n   resultCode = pm.execute();\n   if (resultCode) then\n      logr.log('E', 'Error: pm.execute failed.  resultCode=$s', resultCode);\n   else do;\n      \"EM_CLASSIFICATION\" = pm.getString('EM_CLASSIFICATION');\n      \"EM_EVENTPROBABILITY\" = pm.getDouble('EM_EVENTPROBABILITY');\n   end;\nend;\n\nendpackage;\n",
+    "sourceURI": "/modelRepository/models/5f7118c4-072a-4daa-9f55-573f50f13dd8",
+    "projectID": "e1984af3-ba68-4706-8f4a-532a2e3412df",
+    "projectVersionID": "19cadd4e-a514-422f-8cb8-45caeb9213af",
+    "modelID": "5f7118c4-072a-4daa-9f55-573f50f13dd8",
+    "modelVersionID": "1.0",
+    "publishLevel": "model",
+    "variableXML": "\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003cScore\u003e\n  \u003cTargetList\u003e\u003c/TargetList\u003e\n  \u003cProducer\u003e\n    \u003cName\u003eSAS Model Manager\u003c/Name\u003e\n    \u003cVersion\u003e15.1\u003c/Version\u003e\n  \u003c/Producer\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"Age\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"WorkClass\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"Education\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"MartialStatus\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"Relationship\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"Race\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"Sex\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"HoursPerWeek\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"GE50K\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cOutput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"EM_CLASSIFICATION\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Output\u003e\n  \u003cOutput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"EM_EVENTPROBABILITY\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Output\u003e\n\u003c/Score\u003e"
+  },
+  "properties": {
+    "gitFolderPath": "Decision_Tree__Python_",
+    "gitRepositoryURL": "https://github.com/sas-jemill/mmtest.git"
+  },
+  "sourceURI": "/modelRepository/models/5f7118c4-072a-4daa-9f55-573f50f13dd8",
+  "inputVariables": null,
+  "outputVariables": null,
+  "component": {},
+  "product": {},
+  "service": {
+    "name": "Model Publish service"
+  },
+  "baseImage": {}
+}

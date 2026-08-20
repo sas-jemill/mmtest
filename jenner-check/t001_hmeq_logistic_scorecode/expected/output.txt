@@ -1,0 +1,22 @@
+
+ LOAN      JOB   REASON  Into: BAD  Predicted for BAD =1  Predicted for BAD
+11000  Other    DebtCon  0                  0.2105909936  0
+ 5000  Mgr      HomeImp  0                  0.2777131683  0
+18000  Sales    DebtCon  1                   0.556494219  1
+25000  Office   DebtCon  0                  0.0618019047  0
+ 9000  Self     HomeImp  1                  0.5952284617  1
+14000  ProfExe  DebtCon  0                  0.1590340188  0
+ 7000  Other    HomeImp  1                  0.8020375312  1
+30000  Mgr      DebtCon  0                  0.0319573443  0
+12500  Sales    HomeImp  0                  0.4114537523  0
+16000  Office   DebtCon  0                  0.1334192907  0
+ 6000  .        DebtCon  1                  0.9999996344  1
+21000  ProfExe  HomeImp  0                  0.0797418509  0
+
+                                                   The FREQ Procedure
+
+                                       Cumulative    Cumulative
+Into: BAD    Frequency    Percent     Frequency      Percent
+------------------------------------------------------------------
+0                    8     66.67            8        66.67
+1                    4     33.33           12       100.00

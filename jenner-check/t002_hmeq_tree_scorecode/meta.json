@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_hmeq_tree_scorecode",
+  "source_file": "QS_Tree1/dmcas_scorecode.sas",
+  "source_blob_sha": "20eb3b31f412a786fc9ae99b3f9c7e0a18244712",
+  "source_commit": "b8ddbaad662ed08ffce28eb50985a911a275354a",
+  "notes": "SAS Model Manager-generated decision tree scoring code for the HMEQ (home equity 'BAD') model, from PROC TREESPLIT (QS_Tree1) -- byte-for-byte from QS_Tree1/dmcas_scorecode.sas. Added a leading DATA step with 12 mock HMEQ-shaped rows chosen to walk different branches of the 18-node tree (varying DELINQ/DEBTINC/DEROG/VALUE/CLAGE so multiple leaf nodes are reached), plus PROC PRINT/PROC FREQ to surface the predicted classification. No scoring logic was edited."
+}

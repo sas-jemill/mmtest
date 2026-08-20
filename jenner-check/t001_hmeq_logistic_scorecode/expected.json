@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-08-20T07:30:00Z",
+  "_captured_run_id": "r_65361338c5674032b4ad8d8ed6788715",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Read 12 rows from DATALINES.",
+    "NOTE: Wrote work.scored (12 rows, 27 columns).",
+    "NOTE: PROC PRINT completed: 12 observations printed, 6 variables",
+    "NOTE: PROC FREQ statement used."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
